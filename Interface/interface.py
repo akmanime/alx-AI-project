@@ -46,7 +46,7 @@ fractal_dimension_worst = st.number_input('Worst fractal dimension')
 # Predict Button
 if st.button('Predict'):
     if (radius_mean == 0 or texture_mean == 0 or perimeter_mean == 0 or area_mean == 0 or smoothness_mean == 0):
-        st.error("Please fill all the fields")
+        st.error("Please fill the fields")
     else:
         # Feedback visuel
         with st.spinner('Prediction ...'):
